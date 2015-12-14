@@ -20,20 +20,20 @@ We chose to do a humorisitc character creator based on the famous astromech **R2
 
 
 #### High-priority
-- Research: Character creation inspiration
-- Research: Astromech variation inspiration
-- Conception: Creator flow (linear mode and sandbox mode)
-- Design: R2-D2 (model and parts) -> vectors
-- Design: Homepage
-- Design: Editor/sandbox
-- Dev: Homepage
-- Dev: Editor/sandbox
+- *Research*: Character creation inspiration
+- *Research*: Astromech variation inspiration
+- *Conception*: Creator flow (linear mode and sandbox mode)
+- *Design*: R2-D2 (model and parts) -> vectors
+- *Design*: Homepage
+- *Design*: Editor/sandbox
+- *Dev*: Homepage
+- *Dev*: Editor/sandbox
 
 #### Mid-priority
-- Design: Alternative astromech parts
-- Design: Backgrounds (intended to transform custom astromechs into backgrounds or other images)
+- *Design*: Alternative astromech parts
+- *Design*: Backgrounds (intended to transform custom astromechs into backgrounds or other images)
 - Sharing options (tweet, export, etc...)
 
 #### Low-priority
-- Design: Alternative species models and parts (Queen Amidala's hair, C-3PO head, etc...)
-- Design/Dev: Responsive version
+- *Design*: Alternative species models and parts (Queen Amidala's hair, C-3PO head, etc...)
+- *Design/Dev*: Responsive version
