@@ -30,6 +30,7 @@ We chose to do a humorisitc character creator based on the famous astromech **R2
 - *Dev*: Editor/sandbox
 
 #### Mid-priority
+- Find a name
 - *Design*: Alternative astromech parts
 - *Design*: Backgrounds (intended to transform custom astromechs into backgrounds or other images)
 - Sharing options (tweet, export, etc...)
