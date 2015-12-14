@@ -19,7 +19,7 @@ We chose to do a humorisitc character creator based on the famous astromech **R2
 ## Roadmap
 
 
-### High-priority
+#### High-priority
 - Research: Character creation inspiration
 - Research: Astromech variation inspiration
 - Conception: Creator flow (linear mode and sandbox mode)
@@ -29,11 +29,11 @@ We chose to do a humorisitc character creator based on the famous astromech **R2
 - Dev: Homepage
 - Dev: Editor/sandbox
 
-### Mid-priority
+#### Mid-priority
 - Design: Alternative astromech parts
 - Design: Backgrounds (intended to transform custom astromechs into backgrounds or other images)
 - Sharing options (tweet, export, etc...)
 
-### Low-priority
+#### Low-priority
 - Design: Alternative species models and parts (Queen Amidala's hair, C-3PO head, etc...)
 - Design/Dev: Responsive version
