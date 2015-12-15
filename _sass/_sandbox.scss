@@ -17,7 +17,7 @@
 }
 
 .sbx-leftbar, .sbx-rightbar {
-  max-width: 33%;
+  max-width: 25%;
 }
 
 .sbx-preview {
@@ -32,13 +32,17 @@
   margin-left: 0;
   list-style: none;
   .sbx-nav-item {
+    display: flex;
     flex: 0 0 auto;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
     width: 80px;
     height: 80px;
     border: 1px solid cyan;
     margin: 5px;
     transition: 0.2s ease-in;
-    &:hover {
+    &:hover, &.active {
       background: blue;
       color: white;
       border: 1px solid blue;
@@ -48,8 +52,7 @@
 }
 
 .sbx-inventory {
-  display: flex;
-  flex: 1 0 auto;
+  flex: 1 1 auto;
   flex-flow: row wrap;
   margin-left: 0;
   padding: 5px;
@@ -57,11 +60,46 @@
   overflow-y: scroll;
   border: 1px dotted maroon;
   .sbx-inventory-item {
+    display: none;
     flex: 1 1 100%;
+    align-items: center;
     min-width: 100%;
     height: 80px;
     border: 1px solid pink;
     margin: 5px 5px 5px 0;
+    transition: 0.2s ease-in;
+    padding-left: 20px;
+    &.visible {
+      display: flex;
+    }
+    &:hover, &.active {
+      background: red;
+      color: white;
+      border: 1px solid red;
+      cursor: pointer;
+    }
   }
 } 
+
+.sbx-preview {
+  .sbx-preview-name {
+    position: relative;
+    top: 0;
+    left: 0;
+    input {
+      border: 0;
+      background: none;
+      font-size: 25px;
+      border-bottom: 4px solid transparent;
+      padding-bottom: 10px;
+      transition: 0.2s ease-out;
+      &:active, &:focus {
+        outline: none;
+      -webkit-appearance: none;
+        padding-bottom: 0px;
+        border-bottom: 4px solid darkgrey;
+      }
+    }
+  }
+}
 

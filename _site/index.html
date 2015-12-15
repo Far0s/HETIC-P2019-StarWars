@@ -10,8 +10,8 @@
 
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://sdancermichel.me/work/astromechfactory/">
-  <link rel="alternate" type="application/rss+xml" title="The Astromech Factory" href="http://sdancermichel.me/work/astromechfactory/feed.xml" />
+  <link rel="canonical" href="http://sdancermichel.me/work/astromechfactory//">
+  <link rel="alternate" type="application/rss+xml" title="The Astromech Factory" href="http://sdancermichel.me/work/astromechfactory//feed.xml" />
 </head>
 
   <body>
@@ -56,42 +56,54 @@
   <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
 </div> -->
 
-<div class="home">
-  <div class="sandbox">
-    <div class="sbx sbx-leftbar">
-      <ul class="sbx-nav">
-        <li class="sbx-nav-item">head</li>
-        <li class="sbx-nav-item">trunk</li>
-        <li class="sbx-nav-item">legs</li>
-        <li class="sbx-nav-item">accessories</li>
-      </ul>
-      <ul class="sbx-inventory">
-        <li class="sbx-inventory-item">lol</li>
-        <li class="sbx-inventory-item">lol</li>
-        <li class="sbx-inventory-item">lol</li>
-        <li class="sbx-inventory-item">lol</li>
-        <li class="sbx-inventory-item">lol</li>
-        <li class="sbx-inventory-item">lol</li>
-        <li class="sbx-inventory-item">lol</li>
-        <li class="sbx-inventory-item">lol</li>
-        <li class="sbx-inventory-item">lol</li>
-        <li class="sbx-inventory-item">lol</li>
-      </ul>
-    </div>
-    <div class="sbx sbx-preview"></div>
-    <div class="sbx sbx-rightbar"></div>
+<div class="sandbox">
+  <div class="sbx sbx-leftbar">
+    <ul class="sbx-nav">
+      <li class="sbx-nav-item all active">All</li>
+      <li class="sbx-nav-item head">Head</li>
+      <li class="sbx-nav-item trunk">Trunk</li>
+      <li class="sbx-nav-item legs">Legs</li>
+      <li class="sbx-nav-item accessories">Accessories</li>
+    </ul>
+    <ul class="sbx-inventory">
+      <li class="sbx-inventory-item head visible">Head #1</li>
+      <li class="sbx-inventory-item head visible">Head #2</li>
+      <li class="sbx-inventory-item head visible">Head #3</li>
+      <li class="sbx-inventory-item trunk visible">Trunk #1</li>
+      <li class="sbx-inventory-item trunk visible">Trunk #2</li>
+      <li class="sbx-inventory-item trunk visible">Trunk #3</li>
+      <li class="sbx-inventory-item legs visible">Legs #1</li>
+      <li class="sbx-inventory-item legs visible">Legs #2</li>
+      <li class="sbx-inventory-item legs visible">Legs #3</li>
+      <li class="sbx-inventory-item accessories visible">Accessory #1</li>
+      <li class="sbx-inventory-item accessories visible">Accessory #2</li>
+      <li class="sbx-inventory-item accessories visible">Accessory #3</li>
+    </ul>
   </div>
+  <div class="sbx sbx-preview">
+    <div class="sbx-preview-name">
+      <h2>Name your droid !</h2>
+      <input type="text" placeholder="R2-D2">
+      <button>random</button>
+    </div>
+  </div>
+  <div class="sbx sbx-rightbar"></div>
 </div>
 
-<script>
-  var nav = document.querySelector('.sbx-nav'),
-      navItem = nav.querySelector('.sbx-nav-item');
+    <script src="/js/main.js"></script>
+<script src="/js/uilang.js"></script>
+<code>
+  clicking on ".sbx-nav-item" removes class "active" on ".sbx-nav-item.active"
+  clicking on ".sbx-nav-item" adds class "active" on target
 
-  navItem.addEventListener('click', function(){
-    this.toggleClass('active');
-  });
-</script>
-
-    
+  clicking on ".sbx-inventory-item" toggles class "active" on target
+  
+  clicking on ".sbx-nav-item" removes class "visible" on ".sbx-inventory-item"
+  clicking on ".sbx-nav-item.all" toggles class "visible" on ".sbx-inventory-item"
+  clicking on ".sbx-nav-item.head" toggles class "visible" on ".sbx-inventory-item.head"
+  clicking on ".sbx-nav-item.trunk" toggles class "visible" on ".sbx-inventory-item.trunk"
+  clicking on ".sbx-nav-item.legs" toggles class "visible" on ".sbx-inventory-item.legs"
+  clicking on ".sbx-nav-item.accessories" toggles class "visible" on ".sbx-inventory-item.accessories"
+</code>
   </body>
 </html>

@@ -14,7 +14,7 @@ We chose to do a humorisitc character creator based on the famous astromech **R2
 - Mathieu MERCIER
 
 ## Features
-- 
+- Built on Jekyll for easy templating and SASS control
 
 ## Roadmap
 
