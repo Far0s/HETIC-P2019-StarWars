@@ -2,22 +2,53 @@
 layout: default
 ---
 
-<div class="home">
-
+<!-- <div class="home">
   <h1 class="page-heading">Posts</h1>
-
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
       </li>
     {% endfor %}
   </ul>
-
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+</div> -->
 
+<div class="home">
+  <div class="sandbox">
+    <div class="sbx sbx-leftbar">
+      <ul class="sbx-nav">
+        <li class="sbx-nav-item">head</li>
+        <li class="sbx-nav-item">trunk</li>
+        <li class="sbx-nav-item">legs</li>
+        <li class="sbx-nav-item">accessories</li>
+      </ul>
+      <ul class="sbx-inventory">
+        <li class="sbx-inventory-item">lol</li>
+        <li class="sbx-inventory-item">lol</li>
+        <li class="sbx-inventory-item">lol</li>
+        <li class="sbx-inventory-item">lol</li>
+        <li class="sbx-inventory-item">lol</li>
+        <li class="sbx-inventory-item">lol</li>
+        <li class="sbx-inventory-item">lol</li>
+        <li class="sbx-inventory-item">lol</li>
+        <li class="sbx-inventory-item">lol</li>
+        <li class="sbx-inventory-item">lol</li>
+      </ul>
+    </div>
+    <div class="sbx sbx-preview"></div>
+    <div class="sbx sbx-rightbar"></div>
+  </div>
 </div>
+
+<script>
+  var nav = document.querySelector('.sbx-nav'),
+      navItem = nav.querySelector('.sbx-nav-item');
+
+  navItem.addEventListener('click', function(){
+    this.toggleClass('active');
+  });
+</script>
