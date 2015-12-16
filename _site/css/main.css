@@ -390,7 +390,8 @@ pre {
     font-size: 25px;
     border-bottom: 4px solid transparent;
     padding-bottom: 10px;
-    transition: 0.2s ease-out; }
+    transition: 0.2s ease-out;
+    max-width: 72px; }
     .sbx-preview .sbx-preview-name input:active, .sbx-preview .sbx-preview-name input:focus {
       outline: none;
       -webkit-appearance: none;
