@@ -14,7 +14,12 @@ We chose to do a humorisitc character creator based on the famous astromech **R2
 - Mathieu MERCIER
 
 ## Features
-- Built on Jekyll for easy templating and SASS control
+- The website is a droid customizer. 
+- The user begins by choosing the form of his astromech's head, and his color scheme. The designs features many droids seen in the films and the TV series. He also has the possibility to create a totally random astromech.
+- After that he can change his droid's name and preview his little companion.
+- On the right the user will have more options to customize his droid: hats, bags and other accessories, and backgrounds !
+- Finally, a "share" button will be available with multiple options: social media, export/download, etc...
+- While customizing him, the astromech will react and emit sounds, revealing if he likes the style you're giving him !
 
 ## Roadmap
 
@@ -30,7 +35,6 @@ We chose to do a humorisitc character creator based on the famous astromech **R2
 - *Dev*: Editor/sandbox
 
 #### Mid-priority
-- Find a name
 - *Design*: Alternative astromech parts
 - *Design*: Backgrounds (intended to transform custom astromechs into backgrounds or other images)
 - Sharing options (tweet, export, etc...)
