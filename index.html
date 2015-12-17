@@ -19,10 +19,15 @@
   <div class="sbx sbx-leftbar">
     <div class="form-selector">
       <h2>Choose your droid !</h2>
-      <button class="form-selector-option">circular</button>
-      <button class="form-selector-option">polygonal</button>
+      <input type="radio" name="form" value="spherical" class="form-selector-option" checked>
+      <input type="radio" name="form" value="circular" class="form-selector-option">
     </div>
-    
+    <div class="color-selector">
+      <input type="radio" name="color" value="blue" class="color-selector-option" checked>
+      <input type="radio" name="color" value="red" class="color-selector-option">
+      <input type="radio" name="color" value="green" class="color-selector-option">
+    </div>
+    <button class="randomall-btn">Randomize All</button>
   </div>
   <div class="sbx sbx-preview">
     <div class="sbx-preview-name">
@@ -31,7 +36,7 @@
       <input type="text" placeholder="R2-D2">
     </div>
     <div class="sbx-preview-viewbox">
-      
+
     </div>
   </div>
   <div class="sbx sbx-rightbar">
