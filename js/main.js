@@ -3,7 +3,11 @@ var formOption = document.querySelectorAll('.form-selector-option'),
 formOptionSelected = document.querySelector('.form-selector-option.selected'),
 colorOption = document.querySelectorAll('.color-selector-option'),
 colorOptionSelected = document.querySelector('.color-selector-option').querySelector('[selected]'),
+bgOption = document.querySelectorAll('.bg-selector-option'),
+bgOptionSelected = document.querySelector('.color-selector-option').querySelector('[selected]'),
 randomBtn = document.querySelector('.randomall-btn'),
+viewbox = document.querySelector('.sbx-preview-viewbox'),
+inventoryItem = document.querySelectorAll('.sbx-inventory-item'),
     formChosen = 'spherical', // default
     colorChosen = 'blue', // default
     bgChosen = "1"; // default
@@ -12,49 +16,53 @@ randomBtn = document.querySelector('.randomall-btn'),
 // General Init function, updates the droid
 function init() {
   // Get all relevant vars : form, color, background, bonus
-  // Draw droid from thos vars
-  console.log('INIT');
+  // Draw droid from those vars
+  viewbox.innerHTML = '<img src="img/basis/'+formChosen+colorChosen+'.png">';
 }
 
 
 // Droid Form Selector
 function formSelector() {
   formChosen = this.getAttribute('value');
-  // console.log(formChosen);
   init();
 }
-
 for (var i = 0; i < formOption.length; i++) {
   formOption[i].addEventListener('click', formSelector);
 }
 
 
-// Droid Color Scheme Selector
+// Droid Color Selector
 function colorSelector() {
   colorChosen = this.getAttribute('value');
-  // console.log(colorChosen);
   init();
 }
-
 for (var i = 0; i < colorOption.length; i++) {
   colorOption[i].addEventListener('click', colorSelector);
 }
 
 
-// Droid Total Randomizer (random form + color + name)
-function randomAll() {
-  var randForm = ['spherical', 'circular'],
-  randColor = ['blue', 'green', 'red'];
-  formChosen = randForm[Math.floor(Math.random() * randForm.length)];
-  colorChosen = randColor[Math.floor(Math.random() * randColor.length)];
-  randomName();
-  // console.log(formChosen);
-  // console.log(colorChosen);
-  // Add random background
-  // Add random bonus
+// Background Selector
+function bgSelector() {
+  bgChosen = this.getAttribute('value');
   init();
 }
+for (var i = 0; i < bgOption.length; i++) {
+  bgOption[i].addEventListener('click', bgSelector);
+}
 
+
+// Droid Total Randomizer (random form + color + background + name)
+function randomAll() {
+  var randForm = ['spherical', 'circular'],
+  randColor = ['blue', 'green', 'red', 'gold', 'black', 'green2', 'orange', 'blue2', 'black2', 'orange2'],
+  randBg = ['1', '2', '3', '4'];
+  formChosen = randForm[Math.floor(Math.random() * randForm.length)];
+  colorChosen = randColor[Math.floor(Math.random() * randColor.length)],
+  bgChosen = randBg[Math.floor(Math.random() * randBg.length)];
+  randomName();
+  // + Add random bonus ?
+  init();
+}
 randomBtn.addEventListener('click', randomAll);
 
 
@@ -70,8 +78,8 @@ document.querySelector('.sbx-preview-name button').addEventListener('click', ran
 
 
 
-var viewbox = document.querySelector('.sbx-preview-viewbox');
-var inventoryItem = document.querySelectorAll('.sbx-inventory-item');
+
+
 // inventoryItem.addEventListener('click', function(){
 //   console.log(this.getAttribute('data-cat'));
 //   console.log(this.getAttribute('data-item'));
@@ -87,17 +95,17 @@ var inventoryItem = document.querySelectorAll('.sbx-inventory-item');
 //      - if there is already an item in the viewbox, replace it wih the new item
 //      - else add the item
 
-for (var i = 0; i < inventoryItem.length; i++) {
-  inventoryItem[i].addEventListener('click', function() {
-    var dataCat = this.getAttribute('data-cat'),
-    dataItem = this.getAttribute('data-item');
-    if (dataCat == 'accessories'){
-      console.log(dataItem);
-      if (!viewbox.querySelector('[data-item='+dataItem+']')) {
-        viewbox.innerHTML += "<img class='sbx-part' src='/img/"+ this.getAttribute('data-cat') +"/"+ this.getAttribute('data-item') +".png'>";
-      }
-    } else {
-      viewbox.removeChild(querySelector('.sbx-part[data-item='+dataItem+']'));
-    }
-  });
-}
+// for (var i = 0; i < inventoryItem.length; i++) {
+//   inventoryItem[i].addEventListener('click', function() {
+//     var dataCat = this.getAttribute('data-cat'),
+//     dataItem = this.getAttribute('data-item');
+//     if (dataCat == 'accessories'){
+//       console.log(dataItem);
+//       if (!viewbox.querySelector('[data-item='+dataItem+']')) {
+//         viewbox.innerHTML += "<img class='sbx-part' src='/img/"+ this.getAttribute('data-cat') +"/"+ this.getAttribute('data-item') +".png'>";
+//       }
+//     } else {
+//       viewbox.removeChild(querySelector('.sbx-part[data-item='+dataItem+']'));
+//     }
+//   });
+// }

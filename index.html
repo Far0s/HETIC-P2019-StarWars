@@ -19,13 +19,45 @@
   <div class="sbx sbx-leftbar">
     <div class="form-selector">
       <h2>Choose your droid !</h2>
-      <input type="radio" name="form" value="spherical" class="form-selector-option" checked>
-      <input type="radio" name="form" value="circular" class="form-selector-option">
+      <span>Form:</span>
+      <input type="radio" name="form-spherical" value="spherical" id="spherical" class="form-selector-option">
+      <label for="spherical" class="form-selector-label">Spherical</label>
+      <input type="radio" name="form-spherical" value="circular" id="circular" class="form-selector-option">
+      <label for="circular" class="form-selector-label">Circular</label>
     </div>
     <div class="color-selector">
-      <input type="radio" name="color" value="blue" class="color-selector-option" checked>
-      <input type="radio" name="color" value="red" class="color-selector-option">
-      <input type="radio" name="color" value="green" class="color-selector-option">
+      <span>Color:</span>
+      <input type="radio" name="color" value="blue" id="blue" class="color-selector-option">
+      <label for="blue" class="color-selector-label">blue</label>
+      <input type="radio" name="color" value="red" id="red" class="color-selector-option">
+      <label for="red" class="color-selector-label">red</label>
+      <input type="radio" name="color" value="green" id="green" class="color-selector-option">
+      <label for="green" class="color-selector-label">green</label>
+      <input type="radio" name="color" value="gold" id="gold" class="color-selector-option">
+      <label for="gold" class="color-selector-label">gold</label>
+      <input type="radio" name="color" value="black" id="black" class="color-selector-option">
+      <label for="black" class="color-selector-label">black</label>
+      <input type="radio" name="color" value="green2" id="green2" class="color-selector-option">
+      <label for="green2" class="color-selector-label">green2</label>
+      <input type="radio" name="color" value="orange" id="orange" class="color-selector-option">
+      <label for="orange" class="color-selector-label">orange</label>
+      <input type="radio" name="color" value="blue2" id="blue2" class="color-selector-option">
+      <label for="blue2" class="color-selector-label">blue2</label>
+      <input type="radio" name="color" value="black2" id="black2" class="color-selector-option">
+      <label for="black2" class="color-selector-label">black2</label>
+      <input type="radio" name="color" value="orange2" id="orange2" class="color-selector-option">
+      <label for="orange2" class="color-selector-label">orange2</label>
+    </div>
+    <div class="bg-selector">
+      <span>Background:</span>
+      <input type="radio" name="bg" value="1" id="bg1" class="bg-selector-option">
+      <label for="bg1" class="bg-selector-label">bg1</label>
+      <input type="radio" name="bg" value="2" id="bg2" class="bg-selector-option">
+      <label for="bg2" class="bg-selector-label">bg2</label>
+      <input type="radio" name="bg" value="3" id="bg3" class="bg-selector-option">
+      <label for="bg3" class="bg-selector-label">bg3</label>
+      <input type="radio" name="bg" value="4" id="bg4" class="bg-selector-option">
+      <label for="bg4" class="bg-selector-label">bg4</label>
     </div>
     <button class="randomall-btn">Randomize All</button>
   </div>
@@ -41,11 +73,18 @@
   </div>
   <div class="sbx sbx-rightbar">
     <ul class="sbx-nav">
-      <li class="sbx-nav-item all active">All</li>
-      <li class="sbx-nav-item head">Head</li>
-      <li class="sbx-nav-item trunk">Trunk</li>
-      <li class="sbx-nav-item legs">Legs</li>
-      <li class="sbx-nav-item accessories">Accessories</li>
+      <input type="radio" name="cathair" id="cathair" value="hair" class="sbx-nav-item">
+      <label for="cathair" class="sbx-nav-label">Hair</label>
+      <input type="radio" name="cathat" id="cathat" value="hat" class="sbx-nav-item">
+      <label for="cathat" class="sbx-nav-label">Hat</label>
+      <input type="radio" name="catscarf" id="catscarf" value="scarf" class="sbx-nav-item">
+      <label for="catscarf" class="sbx-nav-label">Scarf</label>
+      <input type="radio" name="cattshirt" id="cattshirt" value="tshirt" class="sbx-nav-item">
+      <label for="cattshirt" class="sbx-nav-label">Tshirt</label>
+      <input type="radio" name="catpants" id="catpants" value="pants" class="sbx-nav-item">
+      <label for="catpants" class="sbx-nav-label">Pants</label>
+      <input type="radio" name="catbonus" id="catbonus" value="bonus" class="sbx-nav-item">
+      <label for="catbonus" class="sbx-nav-label">Bonus</label>
     </ul>
     <ul class="sbx-inventory">
       <li class="sbx-inventory-item head visible" data-cat="head" data-item="head1">Head #1</li>
@@ -62,17 +101,16 @@
 
 <script src="js/main.js"></script>
 <script src="js/uilang.js"></script>
-<code>
+<!-- <code>
   clicking on ".sbx-nav-item" removes class "active" on ".sbx-nav-item.active"
   clicking on ".sbx-nav-item" adds class "active" on target
 
   clicking on ".sbx-inventory-item" toggles class "active" on target
   
   clicking on ".sbx-nav-item" removes class "visible" on ".sbx-inventory-item"
-  clicking on ".sbx-nav-item.all" toggles class "visible" on ".sbx-inventory-item"
   clicking on ".sbx-nav-item.head" toggles class "visible" on ".sbx-inventory-item.head"
   clicking on ".sbx-nav-item.trunk" toggles class "visible" on ".sbx-inventory-item.trunk"
   clicking on ".sbx-nav-item.legs" toggles class "visible" on ".sbx-inventory-item.legs"
   clicking on ".sbx-nav-item.accessories" toggles class "visible" on ".sbx-inventory-item.accessories"
-</code>
+</code> -->
 </html>

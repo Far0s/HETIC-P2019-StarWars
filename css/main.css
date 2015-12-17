@@ -17,8 +17,8 @@ body * {
   flex-flow: row wrap;
   max-width: 100%;
   margin: auto;
+  padding: 30px;
   border: 1px dotted red;
-  /*background: lightgrey; */
 }
 
 .sbx {
@@ -115,7 +115,6 @@ body * {
   border-bottom: 4px solid transparent;
   padding-bottom: 10px;
   transition: 0.2s ease-out;
-  max-width: 72px; 
 }
 .sbx-preview .sbx-preview-name input:active, 
 .sbx-preview .sbx-preview-name input:focus {
@@ -139,18 +138,20 @@ body * {
   display: inline-block;
 }
 
-.form-selector-option.selected {
-  border: 2px solid red;
+.form-selector-option[type=radio],
+.color-selector-option[type=radio],
+.bg-selector-option[type=radio],
+.sbx-nav-item[type=radio] {
+   position: absolute;
+   top: -9999px;
+   left: -9999px;
 }
 
-.color-selector input {
-  display: inline-block;
+.form-selector-option[type=radio]:checked + .form-selector-label,
+.color-selector-option[type=radio]:checked + .color-selector-label,
+.bg-selector-option[type=radio]:checked + .bg-selector-label,
+.sbx-nav-item[type=radio]:checked + .sbx-nav-label
+ {
+   background: red;
 }
-.color-selector input:hover {
-  cursor: pointer;
-  color: red;
-}
-.color-selector input.selected {
-  color: red;
-  text-decoration: underline;
-}
+
