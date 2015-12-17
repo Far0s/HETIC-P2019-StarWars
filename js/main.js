@@ -20,7 +20,7 @@ function init() {
 // Droid Form Selector
 function formSelector() {
   formChosen = this.getAttribute('value');
-  console.log(formChosen);
+  // console.log(formChosen);
   init();
 }
 
@@ -32,7 +32,7 @@ for (var i = 0; i < formOption.length; i++) {
 // Droid Color Scheme Selector
 function colorSelector() {
   colorChosen = this.getAttribute('value');
-  console.log(colorChosen);
+  // console.log(colorChosen);
   init();
 }
 
@@ -48,8 +48,8 @@ function randomAll() {
   formChosen = randForm[Math.floor(Math.random() * randForm.length)];
   colorChosen = randColor[Math.floor(Math.random() * randColor.length)];
   randomName();
-  console.log(formChosen);
-  console.log(colorChosen);
+  // console.log(formChosen);
+  // console.log(colorChosen);
   // Add random background
   // Add random bonus
   init();
