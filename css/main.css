@@ -11,7 +11,6 @@ body * {
   box-sizing: border-box;
 }
 
-
 .sandbox {
   display: flex;
   flex-flow: row wrap;
@@ -46,7 +45,7 @@ body * {
   padding-left: 0;
   list-style: none; 
 }
-.sbx-nav .sbx-nav-item {
+.sbx-nav-label {
   display: flex;
   flex: 0 0 auto;
   flex-flow: row wrap;
@@ -58,11 +57,8 @@ body * {
   margin: 5px;
   transition: 0.2s ease-in; 
 }
-.sbx-nav .sbx-nav-item:hover, 
-.sbx-nav .sbx-nav-item.active {
-  background: blue;
-  color: white;
-  border: 1px solid blue;
+.sbx-nav .sbx-nav-label:hover, 
+.sbx-nav .sbx-nav-label.active {
   cursor: pointer; 
 }
 
@@ -75,7 +71,7 @@ body * {
   overflow-y: scroll;
   border: 1px dotted maroon; 
 }
-.sbx-inventory .sbx-inventory-item {
+.sbx-inventory .sbx-inventory-label {
   display: none;
   flex: 1 1 100%;
   align-items: center;
@@ -86,13 +82,18 @@ body * {
   transition: 0.2s ease-in;
   padding-left: 20px; 
 }
-.sbx-inventory .sbx-inventory-item.visible {
+.sbx-nav-item[value="hair"]:checked .sbx-inventory-label[cat="hair"] {
   display: flex; 
 }
-.sbx-inventory .sbx-inventory-item:hover, 
-.sbx-inventory .sbx-inventory-item.active {
+.sbx-nav-item[value="hat"]:checked .sbx-inventory-label[cat="hat"] {
+  display: flex; 
+}
+
+
+
+.sbx-inventory .sbx-inventory-label:hover, 
+.sbx-inventory .sbx-inventory-label {
   background: red;
-  color: white;
   border: 1px solid red;
   cursor: pointer; 
 }
@@ -133,7 +134,6 @@ body * {
   border: 2px solid yellow;
 }
 
-
 .sbx-leftbar {
   display: inline-block;
 }
@@ -141,7 +141,8 @@ body * {
 .form-selector-option[type=radio],
 .color-selector-option[type=radio],
 .bg-selector-option[type=radio],
-.sbx-nav-item[type=radio] {
+.sbx-nav-item[type=radio],
+.sbx-inventory-item[type=radio] {
    position: absolute;
    top: -9999px;
    left: -9999px;
@@ -150,8 +151,8 @@ body * {
 .form-selector-option[type=radio]:checked + .form-selector-label,
 .color-selector-option[type=radio]:checked + .color-selector-label,
 .bg-selector-option[type=radio]:checked + .bg-selector-label,
-.sbx-nav-item[type=radio]:checked + .sbx-nav-label
- {
+.sbx-nav-item[type=radio]:checked + .sbx-nav-label,
+.sbx-inventory-item[type=radio]:checked + .sbx-inventory-label {
    background: red;
 }
 

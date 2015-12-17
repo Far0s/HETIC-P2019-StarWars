@@ -76,16 +76,6 @@ function randomName() {
 
 document.querySelector('.sbx-preview-name button').addEventListener('click', randomName);
 
-
-
-
-
-// inventoryItem.addEventListener('click', function(){
-//   console.log(this.getAttribute('data-cat'));
-//   console.log(this.getAttribute('data-item'));
-//   viewbox.innerHTML += "<img class='sbx-part' src='/img/"+ this.getAttribute('data-cat') +"/"+ this.getAttribute('data-item') +".png'>";
-// });
-
 //addparts() -> onclick inventoryItem
 //  - detect which cat is clicked
 //    - if cat = accessories
@@ -94,6 +84,8 @@ document.querySelector('.sbx-preview-name button').addEventListener('click', ran
 //    - else
 //      - if there is already an item in the viewbox, replace it wih the new item
 //      - else add the item
+
+
 
 // for (var i = 0; i < inventoryItem.length; i++) {
 //   inventoryItem[i].addEventListener('click', function() {

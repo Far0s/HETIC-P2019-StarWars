@@ -72,45 +72,39 @@
     </div>
   </div>
   <div class="sbx sbx-rightbar">
-    <ul class="sbx-nav">
-      <input type="radio" name="cathair" id="cathair" value="hair" class="sbx-nav-item">
+    <div class="sbx-nav">
+      <input type="radio" name="cat" id="cathair" value="hair" class="sbx-nav-item">
       <label for="cathair" class="sbx-nav-label">Hair</label>
-      <input type="radio" name="cathat" id="cathat" value="hat" class="sbx-nav-item">
+      <input type="radio" name="cat" id="cathat" value="hat" class="sbx-nav-item">
       <label for="cathat" class="sbx-nav-label">Hat</label>
-      <input type="radio" name="catscarf" id="catscarf" value="scarf" class="sbx-nav-item">
+      <input type="radio" name="cat" id="catscarf" value="scarf" class="sbx-nav-item">
       <label for="catscarf" class="sbx-nav-label">Scarf</label>
-      <input type="radio" name="cattshirt" id="cattshirt" value="tshirt" class="sbx-nav-item">
+      <input type="radio" name="cat" id="cattshirt" value="tshirt" class="sbx-nav-item">
       <label for="cattshirt" class="sbx-nav-label">Tshirt</label>
-      <input type="radio" name="catpants" id="catpants" value="pants" class="sbx-nav-item">
+      <input type="radio" name="cat" id="catpants" value="pants" class="sbx-nav-item">
       <label for="catpants" class="sbx-nav-label">Pants</label>
-      <input type="radio" name="catbonus" id="catbonus" value="bonus" class="sbx-nav-item">
+      <input type="radio" name="cat" id="catbonus" value="bonus" class="sbx-nav-item">
       <label for="catbonus" class="sbx-nav-label">Bonus</label>
-    </ul>
-    <ul class="sbx-inventory">
-      <li class="sbx-inventory-item head visible" data-cat="head" data-item="head1">Head #1</li>
-      <li class="sbx-inventory-item trunk visible" data-cat="trunk" data-item="trunk1">Trunk #1</li>
-      <li class="sbx-inventory-item legs visible" data-cat="legs" data-item="legs1">Legs #1</li>
-      <li class="sbx-inventory-item accessories visible" data-cat="accessories" data-item="accessories1">Accessory #1</li>
-      <li class="sbx-inventory-item accessories visible" data-cat="accessories" data-item="accessories2">Accessory #2</li>
-      <li class="sbx-inventory-item accessories visible" data-cat="accessories" data-item="accessories3">Accessory #3</li>
-      <li class="sbx-inventory-item accessories visible" data-cat="accessories" data-item="accessories4">Accessory #4</li>
-    </ul>
+    </div>
+    <div class="sbx-inventory">
+      <input type="radio" name="hair" id="hair1" value="hair1" class="sbx-inventory-item">
+      <label for="hair1" cat="hair" class="sbx-inventory-label">hair1</label>
+      <input type="radio" name="hair" id="hair2" value="hair2" class="sbx-inventory-item">
+      <label for="hair2" cat="hair" class="sbx-inventory-label">hair2</label>
+      <input type="radio" name="hair" id="hair3" value="hair3" class="sbx-inventory-item">
+      <label for="hair3" cat="hair" class="sbx-inventory-label">hair3</label>
+
+      <input type="radio" name="hat" id="hat1" value="hat1" class="sbx-inventory-item">
+      <label for="hat1" cat="hat" class="sbx-inventory-label">hat1</label>
+      <input type="radio" name="hat" id="hat2" value="hat2" class="sbx-inventory-item">
+      <label for="hat2" cat="hat" class="sbx-inventory-label">hat2</label>
+
+      <input type="radio" name="scarf" id="scarf1" value="scarf1" class="sbx-inventory-item">
+      <label for="scarf1" cat="scarf" class="sbx-inventory-label">scarf1</label>
+    </div>
   </div>
 </div>
 
 
 <script src="js/main.js"></script>
-<script src="js/uilang.js"></script>
-<!-- <code>
-  clicking on ".sbx-nav-item" removes class "active" on ".sbx-nav-item.active"
-  clicking on ".sbx-nav-item" adds class "active" on target
-
-  clicking on ".sbx-inventory-item" toggles class "active" on target
-  
-  clicking on ".sbx-nav-item" removes class "visible" on ".sbx-inventory-item"
-  clicking on ".sbx-nav-item.head" toggles class "visible" on ".sbx-inventory-item.head"
-  clicking on ".sbx-nav-item.trunk" toggles class "visible" on ".sbx-inventory-item.trunk"
-  clicking on ".sbx-nav-item.legs" toggles class "visible" on ".sbx-inventory-item.legs"
-  clicking on ".sbx-nav-item.accessories" toggles class "visible" on ".sbx-inventory-item.accessories"
-</code> -->
 </html>
