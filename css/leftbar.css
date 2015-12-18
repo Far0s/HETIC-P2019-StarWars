@@ -220,12 +220,16 @@ COLOR CHOICE
 .black  {transition:opacity 2s ease-in;cursor:pointer;background:#000000;}
 .yellow {transition:opacity 2s ease-in;cursor:pointer;background:#dca700;}
 .red    {transition:opacity 2s ease-in;cursor:pointer;background:#a74d4b;}
-.blue:hover .hover_color   {opacity:0.5;}
-.red:hover .hover_color    {opacity:0.5;}
-.yellow:hover .hover_color {opacity:0.5;}
-.orange:hover .hover_color {opacity:0.5;}
-.green:hover .hover_color  {opacity:0.5;}
-.black:hover .hover_color  {opacity:0.5;}
+
+.blue:hover .hover_color,
+.red:hover .hover_color,
+.yellow:hover .hover_color,
+.orange:hover .hover_color,
+.green:hover .hover_color,
+.black:hover .hover_color {
+  opacity: 0.3;
+  transform: scale(1);
+}
 
 .hover_color {
   opacity:0;
@@ -235,8 +239,16 @@ COLOR CHOICE
   position: absolute;
   height: 15px;
   width: 15px;
-  border-radius:50%;
-  background-color:black;
+  border-radius: 50%;
+  background-color: black;
+  transition: 0.2s ease-in;
+  pointer-events: none;
+}
+
+.color-selector-option[type=radio]:checked + .color-selector-label .hover_color {
+  margin-top: 7px;
+  opacity: 0.3;
+  transform: scale(2);
 }
 
 /******* 

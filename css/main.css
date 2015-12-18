@@ -146,11 +146,11 @@ body * {
    left: -9999px;
 }
 
-.form-selector-option[type=radio]:checked + .form-selector-label,
+/*.form-selector-option[type=radio]:checked + .form-selector-label,
 .color-selector-option[type=radio]:checked + .color-selector-label,
 .bg-selector-option[type=radio]:checked + .bg-selector-label,
 .sbx-nav-item[type=radio]:checked + .sbx-nav-label,
 .sbx-inventory-item[type=radio]:checked + .sbx-inventory-label {
    background: red;
-}
+}*/
 

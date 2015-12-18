@@ -35,28 +35,40 @@
         </label>
       </div>
     </div> 
-   <div class="droid_color">
-    <h2>Skin color</h2>
-    <div class="ligne"></div>
-    <div class="line_container">
-      <div id="line_1">
-        <div class="color_container blue"><div class="hover_color"></div><div class="white_top"></div></div>
-        <div class="color_container orange"><div class="hover_color"></div><div class="white_top"></div></div>
-        <div class="color_container green"><div class="hover_color"></div><div class="white_top"></div></div>
-      </div>
-      <div id="line_2">
-        <div class="color_container yellow active_color"><div class="hover_color"></div><div class="white_top"></div></div>
-        <div class="color_container red"><div class="hover_color"></div><div class="white_top"></div></div>
-        <div class="color_container blue"><div class="hover_color"></div><div class="white_bottom"></div></div>
-        <div class="color_container orange"><div class="hover_color"></div><div class="white_bottom"></div></div>
-      </div>
-      <div id="line_3">
-        <div class="color_container green"><div class="hover_color"></div><div class="white_bottom"></div></div>
-        <div class="color_container black"><div class="hover_color"></div><div class="dark_yellow"></div></div>
-        <div class="color_container black"><div class="hover_color"></div><div class="white_bottom"></div></div>
+
+    <div class="droid_color">
+      <h2>Skin color</h2>
+      <div class="ligne"></div>
+      <div class="line_container">
+        <div id="line_1">
+          <input type="radio" name="color" value="blue" id="blue" class="color-selector-option">
+          <label for="blue" class="color-selector-label"><div class="color_container blue"><div class="hover_color"></div><div class="white_top"></div></div></label>
+          <input type="radio" name="color" value="red" id="red" class="color-selector-option">
+          <label for="red" class="color-selector-label"><div class="color_container red"><div class="hover_color"></div><div class="white_top"></div></div></label>
+          <input type="radio" name="color" value="green" id="green" class="color-selector-option">
+          <label for="green" class="color-selector-label"><div class="color_container green"><div class="hover_color"></div><div class="white_top"></div></div></label>
+        </div>
+        <div id="line_2">
+          <input type="radio" name="color" value="gold" id="gold" class="color-selector-option">
+          <label for="gold" class="color-selector-label"><div class="color_container yellow active_color"><div class="hover_color"></div><div class="white_top"></div></div></label>
+          <input type="radio" name="color" value="black" id="black" class="color-selector-option">
+          <label for="black" class="color-selector-label"><div class="color_container black"><div class="hover_color"></div><div class="white_bottom"></div></div></label>
+          <input type="radio" name="color" value="green2" id="green2" class="color-selector-option">
+          <label for="green2" class="color-selector-label"><div class="color_container green"><div class="hover_color"></div><div class="white_bottom"></div></div></label>
+          <input type="radio" name="color" value="orange" id="orange" class="color-selector-option">
+          <label for="orange" class="color-selector-label"><div class="color_container orange"><div class="hover_color"></div><div class="white_top"></div></div></label>
+        </div>
+        <div id="line_3">
+          <input type="radio" name="color" value="orange2" id="orange2" class="color-selector-option">
+          <label for="orange2" class="color-selector-label"><div class="color_container orange"><div class="hover_color"></div><div class="white_bottom"></div></div></label>
+          <input type="radio" name="color" value="blue2" id="blue2" class="color-selector-option">
+          <label for="blue2" class="color-selector-label"><div class="color_container blue"><div class="hover_color"></div><div class="white_bottom"></div></div></label>
+          <input type="radio" name="color" value="black2" id="black2" class="color-selector-option">
+          <label for="black2" class="color-selector-label"><div class="color_container black"><div class="hover_color"></div><div class="dark_yellow"></div></div></label>
+        </div>
       </div>
     </div>
-  </div>
+
   <!-- <div class="droid_background">
     <h2>Your droid's background</h2>
     <div class="ligne"></div>
@@ -68,29 +80,6 @@
     </div>
   </div> -->
 
-  <div class="color-selector">
-    <span>Color:</span>
-    <input type="radio" name="color" value="blue" id="blue" class="color-selector-option">
-    <label for="blue" class="color-selector-label">blue</label>
-    <input type="radio" name="color" value="red" id="red" class="color-selector-option">
-    <label for="red" class="color-selector-label">red</label>
-    <input type="radio" name="color" value="green" id="green" class="color-selector-option">
-    <label for="green" class="color-selector-label">green</label>
-    <input type="radio" name="color" value="gold" id="gold" class="color-selector-option">
-    <label for="gold" class="color-selector-label">gold</label>
-    <input type="radio" name="color" value="black" id="black" class="color-selector-option">
-    <label for="black" class="color-selector-label">black</label>
-    <input type="radio" name="color" value="green2" id="green2" class="color-selector-option">
-    <label for="green2" class="color-selector-label">green2</label>
-    <input type="radio" name="color" value="orange" id="orange" class="color-selector-option">
-    <label for="orange" class="color-selector-label">orange</label>
-    <input type="radio" name="color" value="blue2" id="blue2" class="color-selector-option">
-    <label for="blue2" class="color-selector-label">blue2</label>
-    <input type="radio" name="color" value="black2" id="black2" class="color-selector-option">
-    <label for="black2" class="color-selector-label">black2</label>
-    <input type="radio" name="color" value="orange2" id="orange2" class="color-selector-option">
-    <label for="orange2" class="color-selector-label">orange2</label>
-  </div>
   <div class="bg-selector">
     <span>Background:</span>
     <input type="radio" name="bg" value="1" id="bg1" class="bg-selector-option">
