@@ -346,3 +346,13 @@ DROID BACKGROUND
   cursor:pointer;
   opacity:1;
 }
+
+
+.random-btn {
+  background: white;
+  border: 2px solid #1c1c1C;
+  outline: 0;
+  font-size: 16px;
+  padding: 5px;
+  margin: auto;
+}

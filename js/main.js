@@ -12,10 +12,9 @@ inventoryItem = document.querySelectorAll('.list > li'),
     colorChosen = 'blue', // default
     bgChosen = "tatooine"; // default
 
-// General Init function, updates the droid
+// General Init function
 function init() {
-  // Get all relevant vars : form, color, background, bonus
-  // Draw droid from those vars
+  // Update the droid from the chosen Vars
   viewbox.innerHTML = '<img class="droidbasis" src="img/basis/'+formChosen+colorChosen+'.png">';
   viewbox.style.background = "url(img/bg/"+bgChosen+".png)";
   viewbox.style.backgroundSize = "cover";
