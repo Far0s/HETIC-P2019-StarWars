@@ -20,6 +20,7 @@ function init() {
   viewbox.style.background = "url(img/bg/"+bgChosen+".png)";
   viewbox.style.backgroundSize = "cover";
   viewbox.style.backgroundPosition = "50%";
+  // + should get active accessories and keep them
 }
 
 // Droid Form Selector

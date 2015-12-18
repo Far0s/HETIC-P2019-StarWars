@@ -147,6 +147,7 @@ h1 {
   flex: 2 1 auto; 
   display: block;
   position: relative;
+  text-align: center;
 }
 
 .sbx-preview .sbx-preview-name {
@@ -158,6 +159,7 @@ h1 {
   border: 0;
   background: none;
   font-size: 25px;
+  width: 80px;
   border-bottom: 4px solid transparent;
   padding-bottom: 10px;
   transition: 0.2s ease-out;
@@ -172,9 +174,6 @@ h1 {
 }
 
 .sbx-preview-viewbox {
-  position: relative;
-  top: calc(50% - 250px);
-  left: 5%;
   width: 420px;
   height: 500px;
   margin: auto;
