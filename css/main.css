@@ -11,6 +11,10 @@ body * {
   box-sizing: border-box;
 }
 
+h1 {
+  margin: 0;
+}
+
 
 .sandbox {
   display: flex;
@@ -120,16 +124,25 @@ body * {
   outline: none;
   -webkit-appearance: none;
   padding-bottom: 0px;
+  margin-bottom: 10px;
   border-bottom: 4px solid darkgrey; 
 }
 
 .sbx-preview-viewbox {
   position: relative;
   top: calc(50% - 250px);
-  left: calc(50% - 210px);
-  width: 420px;
+  left: 5%;
+  width: 90%;
   height: 500px;
-  border: 2px solid yellow;
+  background-image: url('../img/bg/tatooine.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.sbx-preview-viewbox img {
+  position: relative;
+  left: calc(50% - 210px);
 }
 
 .sbx-leftbar {
@@ -145,12 +158,3 @@ body * {
    top: -9999px;
    left: -9999px;
 }
-
-/*.form-selector-option[type=radio]:checked + .form-selector-label,
-.color-selector-option[type=radio]:checked + .color-selector-label,
-.bg-selector-option[type=radio]:checked + .bg-selector-label,
-.sbx-nav-item[type=radio]:checked + .sbx-nav-label,
-.sbx-inventory-item[type=radio]:checked + .sbx-inventory-label {
-   background: red;
-}*/
-

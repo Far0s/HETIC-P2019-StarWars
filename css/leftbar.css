@@ -233,8 +233,8 @@ COLOR CHOICE
 
 .hover_color {
   opacity:0;
-  margin-top: 8px;
-  margin-left: 8px;
+  margin-top: 7px;
+  margin-left: 7px;
   z-index:1000;
   position: absolute;
   height: 15px;
@@ -247,6 +247,7 @@ COLOR CHOICE
 
 .color-selector-option[type=radio]:checked + .color-selector-label .hover_color {
   margin-top: 7px;
+  margin-left: 7px;
   opacity: 0.3;
   transform: scale(2);
 }
@@ -271,6 +272,10 @@ DROID BACKGROUND
   margin:10px;
   width:115px;
   height:60px;
+}
+
+.bg-selector-option[type=radio]:checked + .bg-selector-label .bghover {
+  opacity: 1;
 }
 
 .tatooine {background-image:url(../img/assets/tatooine.png);}

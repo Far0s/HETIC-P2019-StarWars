@@ -10,16 +10,17 @@ viewbox = document.querySelector('.sbx-preview-viewbox'),
 inventoryItem = document.querySelectorAll('.sbx-inventory-item'),
     formChosen = 'spherical', // default
     colorChosen = 'blue', // default
-    bgChosen = "1"; // default
-
+    bgChosen = "tatooine"; // default
 
 // General Init function, updates the droid
 function init() {
   // Get all relevant vars : form, color, background, bonus
   // Draw droid from those vars
   viewbox.innerHTML = '<img src="img/basis/'+formChosen+colorChosen+'.png">';
+  viewbox.style.background = "url(img/bg/"+bgChosen+".png)";
+  viewbox.style.backgroundSize = "cover";
+  viewbox.style.backgroundPosition = "50%";
 }
-
 
 // Droid Form Selector
 function formSelector() {
@@ -62,7 +63,7 @@ for (var i = 0; i < bgOption.length; i++) {
 function randomAll() {
   var randForm = ['spherical', 'circular'],
   randColor = ['blue', 'green', 'red', 'gold', 'black', 'green2', 'orange', 'blue2', 'black2', 'orange2'],
-  randBg = ['1', '2', '3', '4'];
+  randBg = ['tatooine', 'planet', 'stars', 'winter'];
   formChosen = randForm[Math.floor(Math.random() * randForm.length)];
   colorChosen = randColor[Math.floor(Math.random() * randColor.length)],
   bgChosen = randBg[Math.floor(Math.random() * randBg.length)];

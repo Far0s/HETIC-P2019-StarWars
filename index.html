@@ -6,8 +6,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-  <link rel="icon" type="image/png" href="img/favicon.png" />
 
+  <link rel="icon" type="image/png" href="img/favicon.png" />
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/leftbar.css">
@@ -15,7 +15,7 @@
 
 <div class="sandbox">
   <div class="sbx sbx-top">
-    <h1>Droid Factory</h1>
+    <h1><img src="img/logo.png" alt="Droid Factory"></h1>
   </div>
   <div class="sbx sbx-leftbar">
     <div class="form-selector">
@@ -69,80 +69,72 @@
       </div>
     </div>
 
-  <!-- <div class="droid_background">
-    <h2>Your droid's background</h2>
-    <div class="ligne"></div>
-    <div class="bg_container">
-      <div class="backgrounds tatooine"><div class="tatooine_hover"></div></div>
-      <div class="backgrounds planet"><div class="planet_hover"></div></div>
-      <div class="backgrounds stars"><div class="stars_hover"></div></div>
-      <div class="backgrounds winter"><div class="winter_hover"></div></div>
+    <div class="bg-selector">
+      <h2>Your droid's background</h2>
+      <div class="ligne"></div>
+      <div class="bg_container">
+        <input type="radio" name="bg" value="tatooine" id="bg1" class="bg-selector-option">
+        <label for="bg1" class="bg-selector-label"><div class="backgrounds tatooine"><div class="tatooine_hover bghover"></div></div></label>
+        <input type="radio" name="bg" value="planet" id="bg2" class="bg-selector-option">
+        <label for="bg2" class="bg-selector-label"><div class="backgrounds planet"><div class="planet_hover bghover"></div></div></label>
+        <input type="radio" name="bg" value="stars" id="bg3" class="bg-selector-option">
+        <label for="bg3" class="bg-selector-label"><div class="backgrounds stars"><div class="stars_hover bghover"></div></div></label>
+        <input type="radio" name="bg" value="winter" id="bg4" class="bg-selector-option">
+        <label for="bg4" class="bg-selector-label"><div class="backgrounds winter"><div class="winter_hover bghover"></div></div></label>
+      </div>
     </div>
-  </div> -->
+    <button class="randomall-btn">Randomize All</button>
+  </div>
+  <div class="sbx sbx-preview">
+    <div class="sbx-preview-name">
+      <h2>Name your droid !</h2>
+      <button>random</button>
+      <input type="text" placeholder="R2-D2">
+    </div>
+    <div class="sbx-preview-viewbox">
 
-  <div class="bg-selector">
-    <span>Background:</span>
-    <input type="radio" name="bg" value="1" id="bg1" class="bg-selector-option">
-    <label for="bg1" class="bg-selector-label">bg1</label>
-    <input type="radio" name="bg" value="2" id="bg2" class="bg-selector-option">
-    <label for="bg2" class="bg-selector-label">bg2</label>
-    <input type="radio" name="bg" value="3" id="bg3" class="bg-selector-option">
-    <label for="bg3" class="bg-selector-label">bg3</label>
-    <input type="radio" name="bg" value="4" id="bg4" class="bg-selector-option">
-    <label for="bg4" class="bg-selector-label">bg4</label>
+    </div>
   </div>
-  <button class="randomall-btn">Randomize All</button>
-</div>
-<div class="sbx sbx-preview">
-  <div class="sbx-preview-name">
-    <h2>Name your droid !</h2>
-    <button>random</button>
-    <input type="text" placeholder="R2-D2">
-  </div>
-  <div class="sbx-preview-viewbox">
+  <div class="sbx sbx-rightbar">
+    <div class="sbx-nav">
+      <input type="radio" name="cat" id="cathair" value="hair" class="sbx-nav-item">
+      <label for="cathair" class="sbx-nav-label">Hair</label>
+      <input type="radio" name="cat" id="cathat" value="hat" class="sbx-nav-item">
+      <label for="cathat" class="sbx-nav-label">Hat</label>
+      <input type="radio" name="cat" id="catscarf" value="scarf" class="sbx-nav-item">
+      <label for="catscarf" class="sbx-nav-label">Scarf</label>
+      <input type="radio" name="cat" id="cattshirt" value="tshirt" class="sbx-nav-item">
+      <label for="cattshirt" class="sbx-nav-label">Tshirt</label>
+      <input type="radio" name="cat" id="catpants" value="pants" class="sbx-nav-item">
+      <label for="catpants" class="sbx-nav-label">Pants</label>
+      <input type="radio" name="cat" id="catbonus" value="bonus" class="sbx-nav-item">
+      <label for="catbonus" class="sbx-nav-label">Bonus</label>
+    </div>
+    <div class="sbx-inventory">
+      <input type="radio" name="hair" id="hair1" value="hair1" class="sbx-inventory-item">
+      <label for="hair1" cat="hair" class="sbx-inventory-label">hair1</label>
+      <input type="radio" name="hair" id="hair2" value="hair2" class="sbx-inventory-item">
+      <label for="hair2" cat="hair" class="sbx-inventory-label">hair2</label>
+      <input type="radio" name="hair" id="hair3" value="hair3" class="sbx-inventory-item">
+      <label for="hair3" cat="hair" class="sbx-inventory-label">hair3</label>
 
-  </div>
-</div>
-<div class="sbx sbx-rightbar">
-  <div class="sbx-nav">
-    <input type="radio" name="cat" id="cathair" value="hair" class="sbx-nav-item">
-    <label for="cathair" class="sbx-nav-label">Hair</label>
-    <input type="radio" name="cat" id="cathat" value="hat" class="sbx-nav-item">
-    <label for="cathat" class="sbx-nav-label">Hat</label>
-    <input type="radio" name="cat" id="catscarf" value="scarf" class="sbx-nav-item">
-    <label for="catscarf" class="sbx-nav-label">Scarf</label>
-    <input type="radio" name="cat" id="cattshirt" value="tshirt" class="sbx-nav-item">
-    <label for="cattshirt" class="sbx-nav-label">Tshirt</label>
-    <input type="radio" name="cat" id="catpants" value="pants" class="sbx-nav-item">
-    <label for="catpants" class="sbx-nav-label">Pants</label>
-    <input type="radio" name="cat" id="catbonus" value="bonus" class="sbx-nav-item">
-    <label for="catbonus" class="sbx-nav-label">Bonus</label>
-  </div>
-  <div class="sbx-inventory">
-    <input type="radio" name="hair" id="hair1" value="hair1" class="sbx-inventory-item">
-    <label for="hair1" cat="hair" class="sbx-inventory-label">hair1</label>
-    <input type="radio" name="hair" id="hair2" value="hair2" class="sbx-inventory-item">
-    <label for="hair2" cat="hair" class="sbx-inventory-label">hair2</label>
-    <input type="radio" name="hair" id="hair3" value="hair3" class="sbx-inventory-item">
-    <label for="hair3" cat="hair" class="sbx-inventory-label">hair3</label>
+      <input type="radio" name="hat" id="hat1" value="hat1" class="sbx-inventory-item">
+      <label for="hat1" cat="hat" class="sbx-inventory-label">hat1</label>
+      <input type="radio" name="hat" id="hat2" value="hat2" class="sbx-inventory-item">
+      <label for="hat2" cat="hat" class="sbx-inventory-label">hat2</label>
 
-    <input type="radio" name="hat" id="hat1" value="hat1" class="sbx-inventory-item">
-    <label for="hat1" cat="hat" class="sbx-inventory-label">hat1</label>
-    <input type="radio" name="hat" id="hat2" value="hat2" class="sbx-inventory-item">
-    <label for="hat2" cat="hat" class="sbx-inventory-label">hat2</label>
-
-    <input type="radio" name="scarf" id="scarf1" value="scarf1" class="sbx-inventory-item">
-    <label for="scarf1" cat="scarf" class="sbx-inventory-label">scarf1</label>
+      <input type="radio" name="scarf" id="scarf1" value="scarf1" class="sbx-inventory-item">
+      <label for="scarf1" cat="scarf" class="sbx-inventory-label">scarf1</label>
+    </div>
   </div>
-</div>
 </div>
 
 <audio id="r2scream" src="img/assets/r2d2_scream.mp3"></audio>
 <script src="js/main.js"></script>
 <script type="text/javascript" src="js/html2canvas.js"></script>
 <script type="text/javascript">
-  html2canvas(document.querySelector('.sbx-preview-viewbox')).then(function(canvas) {
-    document.querySelector('.sbx-preview-viewbox').appendChild(canvas);
-  });
+  // html2canvas(document.querySelector('.sbx-preview-viewbox')).then(function(canvas) {
+  //   document.querySelector('.sbx-preview-viewbox').appendChild(canvas);
+  // });
 </script>
 </html>
