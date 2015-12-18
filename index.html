@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/leftbar.css">
+  <link rel="stylesheet" href="css/rightbar.css">
 </head>
 
 <div class="sandbox">
@@ -94,47 +95,97 @@
     <div class="sbx-preview-viewbox">
 
     </div>
+    <div class="partage">
+      <a href="https://twitter.com/intent/tweet?text=Look%20at%20my%20droid%20!" class="share_btn twitter_button"><div class="share_btn-hover twitter_hover-state"></div></a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=Look%20at%20my%20droid%20!%20" class="share_btn facebook_button"><div class="share_btn-hover facebook_hover-state"></div></a>
+      <a href="https://twitter.com/intent/tweet?text=What%20do%20you%20want%20to%20say%20?%20@lacolmena" class="share_btn save_button"><div class="share_btn-hover save_hover-state"></div></a>
+    </div>
   </div>
   <div class="sbx sbx-rightbar">
-    <div class="sbx-nav">
-      <input type="radio" name="cat" id="cathair" value="hair" class="sbx-nav-item">
-      <label for="cathair" class="sbx-nav-label">Hair</label>
-      <input type="radio" name="cat" id="cathat" value="hat" class="sbx-nav-item">
-      <label for="cathat" class="sbx-nav-label">Hat</label>
-      <input type="radio" name="cat" id="catscarf" value="scarf" class="sbx-nav-item">
-      <label for="catscarf" class="sbx-nav-label">Scarf</label>
-      <input type="radio" name="cat" id="cattshirt" value="tshirt" class="sbx-nav-item">
-      <label for="cattshirt" class="sbx-nav-label">Tshirt</label>
-      <input type="radio" name="cat" id="catpants" value="pants" class="sbx-nav-item">
-      <label for="catpants" class="sbx-nav-label">Pants</label>
-      <input type="radio" name="cat" id="catbonus" value="bonus" class="sbx-nav-item">
-      <label for="catbonus" class="sbx-nav-label">Bonus</label>
-    </div>
-    <div class="sbx-inventory">
-      <input type="radio" name="hair" id="hair1" value="hair1" class="sbx-inventory-item">
-      <label for="hair1" cat="hair" class="sbx-inventory-label">hair1</label>
-      <input type="radio" name="hair" id="hair2" value="hair2" class="sbx-inventory-item">
-      <label for="hair2" cat="hair" class="sbx-inventory-label">hair2</label>
-      <input type="radio" name="hair" id="hair3" value="hair3" class="sbx-inventory-item">
-      <label for="hair3" cat="hair" class="sbx-inventory-label">hair3</label>
-
-      <input type="radio" name="hat" id="hat1" value="hat1" class="sbx-inventory-item">
-      <label for="hat1" cat="hat" class="sbx-inventory-label">hat1</label>
-      <input type="radio" name="hat" id="hat2" value="hat2" class="sbx-inventory-item">
-      <label for="hat2" cat="hat" class="sbx-inventory-label">hat2</label>
-
-      <input type="radio" name="scarf" id="scarf1" value="scarf1" class="sbx-inventory-item">
-      <label for="scarf1" cat="scarf" class="sbx-inventory-label">scarf1</label>
-    </div>
+    <!-- <h2>Customize your droid !</h2> -->
+    <nav class="categories">
+      <ul>
+        <li class="category c_hair" value="hair"></li>
+        <li class="category c_hat" value="hat"></li>
+        <li class="category c_tie" value="neck"></li>
+        <li class="category c_t-shirt" value="t-shirt"></li>
+        <li class="category c_pants" value="pants"></li>
+        <li class="category c_bag" value="bag"></li>
+        <li class="category c_stickers" value="stickers"></li>
+      </ul>
+    </nav>
+    <nav class="accessories">
+      <ul class="list hair" value="hair">
+        <li class="list_accessories" data-item="cheveux_leia_brun" data-cat="hair"><div class="image cheveux_leia_brune"></div><div class="description"> <h4>Brown girl hair</h4></div></li>
+        <li class="list_accessories" data-item="cheveux_leia_blond" data-cat="hair"><div class="image cheveux_leia_blond"></div><div class="description"> <h4>Blond girl hair</h4></div></li>
+        <li class="list_accessories" data-item="cheveux_homme_brun" data-cat="hair"><div class="image cheveux_homme_brun"></div><div class="description"> <h4>Brown man hair</h4></div></li>
+        <li class="list_accessories" data-item="cheveux_homme_blond" data-cat="hair"><div class="image cheveux_homme_blond"></div><div class="description"><h4>Blond man hair</h4></div></li>
+        <li class="list_accessories" data-item="perruque_blond" data-cat="hair"><div class="image perruque_blond"></div><div class="description">     <h4>Blond wig</h4></div></li>
+        <li class="list_accessories" data-item="perruque_brun" data-cat="hair"><div class="image perruque_brun"></div><div class="description">      <h4>Brown wig</h4></div></li>
+        <li class="list_accessories" data-item="moustache" data-cat="hair"><div class="image moustache"></div><div class="description">          <h4>Mustache</h4></div></li>
+      </ul>
+      <ul class="list hat" value="hat">
+        <li class="list_accessories" data-item="aureole" data-cat="hat"><div class="image aureole"></div><div class="description">       <h4>Aureole</h4></div></li>
+        <li class="list_accessories" data-item="bob" data-cat="hat"><div class="image bob"></div><div class="description">           <h4>Sun hat</h4></div></li>
+        <li class="list_accessories" data-item="bonnet_bleu" data-cat="hat"><div class="image bonnet_bleu"></div><div class="description">   <h4>Blue cap</h4></div></li>
+        <li class="list_accessories" data-item="bonnet_noel" data-cat="hat"><div class="image bonnet_noel"></div><div class="description">   <h4>Christmas cap</h4></div></li>
+        <li class="list_accessories" data-item="chapeau_volant" data-cat="hat"><div class="image chapeau_volant"></div><div class="description"><h4>Chopper hat</h4></div></li>
+        <li class="list_accessories" data-item="diplome" data-cat="hat"><div class="image diplome"></div><div class="description">       <h4>Diploma hat</h4></div></li>
+        <li class="list_accessories" data-item="fleur" data-cat="hat"><div class="image fleur"></div><div class="description">         <h4>Flower</h4></div></li>
+        <li class="list_accessories" data-item="noeud_cheveux" data-cat="hat"><div class="image noeud_cheveux"></div><div class="description"> <h4>Node</h4></div></li>
+        <li class="list_accessories" data-item="oreille_lapin" data-cat="hat"><div class="image oreille_lapin"></div><div class="description"> <h4>Bunny ears</h4></div></li>
+      </ul>
+      <ul class="list neck" value="neck">
+        <li class="list_accessories" data-item="collier_fleur" data-cat="neck"><div class="image colier_fleur"></div><div class="description">    <h4>Flower necklace</h4></div></li>
+        <li class="list_accessories" data-item="collier_perle" data-cat="neck"><div class="image colier_perle"></div><div class="description">    <h4>Pearl necklace</h4></div></li>
+        <li class="list_accessories" data-item="collier_rouge" data-cat="neck"><div class="image colier_rouge"></div><div class="description">    <h4>Red necklace</h4></div></li>
+        <li class="list_accessories" data-item="cravate_carreaux" data-cat="neck"><div class="image cravate_carreaux"></div><div class="description"><h4>Square tie</h4></div></li>
+        <li class="list_accessories" data-item="cravate_marron" data-cat="neck"><div class="image cravate_marron"></div><div class="description">  <h4>Brown tie</h4></div></li>
+        <li class="list_accessories" data-item="echarpe_bleu" data-cat="neck"><div class="image echarpe_bleu"></div><div class="description">    <h4>Blue scarf</h4></div></li>
+        <li class="list_accessories" data-item="echarpe_verte" data-cat="neck"><div class="image echarpe_verte"></div><div class="description">   <h4>Green scarf</h4></div></li>
+        <li class="list_accessories" data-item="medaille" data-cat="neck"><div class="image medaille"></div><div class="description">        <h4>Medal</h4></div></li>
+        <li class="list_accessories" data-item="noeud_pap" data-cat="neck"><div class="image noeud_pap"></div><div class="description">       <h4>Butterfly node</h4></div></li>
+      </ul>
+      <ul class="list t-shirt" value="t-shirt">
+        <li class="list_accessories" data-item="ts_imyourdroid" data-cat="tee-shirt"><div class="image ts_imyourdroid"></div><div class="description">         <h4>I'm your droid</h4></div></li>
+        <li class="list_accessories" data-item="ts_imyourmother" data-cat="tee-shirt"><div class="image ts_imyourmother"></div><div class="description">        <h4>I'm your mother</h4></div></li>
+        <li class="list_accessories" data-item="ts_leia" data-cat="tee-shirt"><div class="image ts_leia"></div><div class="description">                <h4>Princess Leia</h4></div></li>
+        <li class="list_accessories" data-item="ts_maytheforcebewithyou" data-cat="tee-shirt"><div class="image ts_maytheforcebewithyou"></div><div class="description"><h4>May the force be with you</h4></div></li>
+        <li class="list_accessories" data-item="maillot_de_bain" data-cat="tee-shirt"><div class="image maillot_de_bain"></div><div class="description">        <h4>Swim suit</h4></div></li>
+        <li class="list_accessories" data-item="miss_droide" data-cat="tee-shirt"><div class="image miss_droide"></div><div class="description">            <h4>Miss Droide</h4></div></li>
+      </ul>
+      <ul class="list pants" value="pants">
+        <li class="list_accessories" data-item="pant_bleu_clair" data-cat="pants"><div class="image pant_bleu_clair"></div><div class="description"><h4>Clear blue pants</h4></div></li>
+        <li class="list_accessories" data-item="pant_bleu_fonce" data-cat="pants"><div class="image pant_bleu_fonce"></div><div class="description"><h4>Clear dark pants</h4></div></li>
+        <li class="list_accessories" data-item="pant_noir" data-cat="pants"><div class="image pant_noir"></div><div class="description">      <h4>Black pants</h4></div></li>
+        <li class="list_accessories" data-item="slip" data-cat="pants"><div class="image slip"></div><div class="description">           <h4>Underwear</h4></div></li>
+      </ul>
+      <ul class="list bag" value="bag">
+        <li class="list_accessories" data-item="artifice" data-cat="bag"><div class="image artifice"></div><div class="description"><h4>Fireworks bag</h4></div></li>
+        <li class="list_accessories" data-item="cadeaux" data-cat="bag"><div class="image cadeaux"></div><div class="description"> <h4>Gift bag</h4></div></li>
+      </ul>
+      <ul class="list stickers" value="stickers">
+        <li class="list_accessories" data-item="stickers_droid_factory" data-cat="stickers"><div class="image stickers_droid_factory"></div><div class="description"><h4>Droid Factory</h4></div></li>
+        <li class="list_accessories" data-item="stickers_leia" data-cat="stickers"><div class="image stickers_leia"></div><div class="description">         <h4>Leia</h4></div></li>
+        <li class="list_accessories" data-item="stickers_starwars" data-cat="stickers"><div class="image stickers_starwars"></div><div class="description">     <h4>Star Wars</h4></div></li>
+      </ul>
+    </nav>
   </div>
 </div>
 
 <audio id="r2scream" src="img/assets/r2d2_scream.mp3"></audio>
+<audio id="ewoktheme" src="img/assets/ewoktheme.mp3" autoplay loop volume="0.3"></audio>
+<script src="js/jquery.js"></script>
 <script src="js/main.js"></script>
-<script type="text/javascript" src="js/html2canvas.js"></script>
-<script type="text/javascript">
-  // html2canvas(document.querySelector('.sbx-preview-viewbox')).then(function(canvas) {
-  //   document.querySelector('.sbx-preview-viewbox').appendChild(canvas);
-  // });
-</script>
+<script src="js/cat.js"></script>
+<script src="js/html2canvas.js"></script>
+<!-- <script type="text/javascript">
+  html2canvas(document.querySelector('.sbx-preview-viewbox')).then(function(canvas) {
+    console.log('html2canvas');
+    var dataURL = canvas.toDataURL();
+    console.log(dataURL);
+    //document.querySelector('.sbx-preview-viewbox').appendChild(canvas);
+  });
+</script> -->
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 </html>

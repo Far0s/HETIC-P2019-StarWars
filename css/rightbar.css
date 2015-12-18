@@ -1,0 +1,246 @@
+/*********
+CUSTOMIZE BAR
+*********/
+
+.customize_bar {
+  width:350px;
+  height:600px;
+}
+
+/*********
+CATEGORY CHOICE
+*********/
+
+.categories {
+  width: 70px;
+  float: left;
+}
+
+.categories ul {
+  list-style-type:none;
+  padding:0;
+  margin:0;
+}
+
+.category {
+  width:70px;
+  height:70px;
+  margin-bottom:10px;
+  transition: 0.2s ease-out;
+}
+
+.category:nth-child(1){background:url('../img/categories/hair.png') no-repeat;}
+.category:nth-child(2){background:url('../img/categories/hat.png') no-repeat;}
+.category:nth-child(3){background:url('../img/categories/neck.png') no-repeat;}
+.category:nth-child(4){background:url('../img/categories/t-shirt.png') no-repeat;}
+.category:nth-child(5){background:url('../img/categories/pants.png') no-repeat;}
+.category:nth-child(6){background:url('../img/categories/bag.png') no-repeat;}
+.category:nth-child(7){background:url('../img/categories/stickers.png') no-repeat;}
+
+/*********
+ACCESSORIES LISTS
+*********/
+
+.accessories {
+  width: 260px;
+  height: 600px;
+  margin-left: 20px;
+  float: left;
+}
+
+.list {
+  height:600px;
+  overflow-y:scroll;
+  width: 260px;
+  list-style-type:none;
+  padding:0;
+  margin:0;
+}
+
+.list_accessories {
+  width:260px;
+  height:70px;
+  margin-bottom:10px;
+}
+
+.list_accessories {
+  cursor:pointer;
+}
+
+.image {
+  float:left;
+  width:70px;
+  height:70px;
+}
+
+.description {
+  float:left;
+  width:190px;
+  height:70px;
+  background-color:white;
+}
+
+h4 {
+  font-family:'Helvetica';
+  color:#5c5c5c;
+  padding-left:20px;
+}
+
+/*********
+HAIR
+*********/
+
+.hair {
+  z-index:9;
+  display:none;
+  position: absolute;
+}
+
+.c_hair:hover,
+.c_hair.active {
+  cursor:pointer;
+  background:url(../img/categories/hair_hover.png) no-repeat;
+}
+
+.cheveux_leia_brune{background:url(../img/categories/hair/cheveux_leia_brun.png) no-repeat;}
+.cheveux_leia_blond{background:url(../img/categories/hair/cheveux_leia_blond.png) no-repeat;}
+.cheveux_homme_brun{background:url(../img/categories/hair/cheveux_homme_brun.png) no-repeat;}
+.cheveux_homme_blond{background:url(../img/categories/hair/cheveux_homme_blond.png) no-repeat;}
+.perruque_blond{background:url(../img/categories/hair/perruque_blond.png) no-repeat;}
+.perruque_brun{background:url(../img/categories/hair/perruque_brun.png) no-repeat;}
+.moustache{background:url(../img/categories/hair/moustache.png) no-repeat;}
+
+/*********
+HAT
+*********/
+
+.hat {
+  z-index:10;
+  display:none;
+  position:absolute;
+}
+
+.c_hat:hover,
+.c_hat.active {
+  cursor:pointer;
+  background:url(../img/categories/hat_hover.png) no-repeat;
+}
+
+.aureole{background:url(../img/categories/hat/aureole.png) no-repeat;}
+.bob{background:url(../img/categories/hat/bob.png) no-repeat;}
+.bonnet_bleu{background:url(../img/categories/hat/bonnet_bleu.png) no-repeat;}
+.bonnet_noel{background:url(../img/categories/hat/bonnet_noel.png) no-repeat;}
+.chapeau_volant{background:url(../img/categories/hat/chapeau_volant.png) no-repeat;}
+.diplome{background:url(../img/categories/hat/diplome.png) no-repeat;}
+.fleur{background:url(../img/categories/hat/fleur.png) no-repeat;}
+.noeud_cheveux{background:url(../img/categories/hat/noeud_cheveux.png) no-repeat;}
+.oreille_lapin{background:url(../img/categories/hat/oreille_lapin.png) no-repeat;}
+
+/*********
+NECK
+*********/
+
+.neck {
+  z-index:11;
+  display:none;
+  position: absolute;
+}
+
+.c_tie:hover,
+.c_tie.active {
+  cursor:pointer;
+  background:url(../img/categories/tie_hover.png) no-repeat;
+}
+
+.colier_fleur{background:url(../img/categories/neck/collier_fleur.png) no-repeat;}
+.colier_perle{background:url(../img/categories/neck/collier_perle.png) no-repeat;}
+.colier_rouge{background:url(../img/categories/neck/cravate_carreaux.png) no-repeat;}
+.cravate_carreaux{background:url(../img/categories/neck/cravate_carreaux.png) no-repeat;}
+.cravate_marron{background:url(../img/categories/neck/cravate_marron.png) no-repeat;}
+.echarpe_bleu{background:url(../img/categories/neck/echarpe_bleu.png) no-repeat;}
+.echarpe_verte{background:url(../img/categories/neck/echarpe_verte.png) no-repeat;}
+.medaille{background:url(../img/categories/neck/medaille.png) no-repeat;}
+.noeud_pap{background:url(../img/categories/neck/noeud_pap.png) no-repeat;}
+
+
+/*********
+T-SHIRT
+*********/
+
+.t-shirt {
+  z-index:12;
+  display:none;
+  position: absolute;
+}
+
+.c_t-shirt:hover,
+.c_t-shirt.active {
+  cursor:pointer;
+  background:url(../img/categories/t-shirt_hover.png) no-repeat;
+}
+.ts_imyourdroid{background:url(../img/categories/tee-shirt/ts_imyourdroid.png) no-repeat;}
+.ts_imyourmother{background:url(../img/categories/tee-shirt/ts_imyourmother.png) no-repeat;}
+.ts_leia{background:url(../img/categories/tee-shirt/ts_leia.png) no-repeat;}
+.ts_maytheforcebewithyou{background:url(../img/categories/tee-shirt/ts_maytheforcebewithyou.png) no-repeat;}
+.maillot_de_bain{background:url(../img/categories/tee-shirt/maillot_de_bain.png) no-repeat;}
+.miss_droide{background:url(../img/categories/tee-shirt/miss_droide.png) no-repeat;}
+
+/*********
+PANTS
+*********/
+
+.pants {
+  z-index:13;
+  display:none;
+  position: absolute;
+}
+
+.c_pants:hover,
+.c_pants.active {
+  cursor:pointer;
+  background:url(../img/categories/pants_hover.png) no-repeat;
+}
+
+.pant_bleu_clair{background:url(../img/categories/pants/pant_bleu_clair.png) no-repeat;}
+.pant_bleu_fonce{background:url(../img/categories/pants/pant_bleu_fonce.png) no-repeat;}
+.pant_noir{background:url(../img/categories/pants/pant_noir.png) no-repeat;}
+.slip{background:url(../img/categories/pants/slip.png) no-repeat;}
+
+/*********
+BAG
+*********/
+
+.bag {
+  z-index:14;
+  display:none;
+  position: absolute;
+}
+
+.c_bag:hover,
+.c_bag.active {
+  cursor:pointer;
+  background:url(../img/categories/bag_hover.png) no-repeat;
+}
+
+.artifice{background:url(../img/categories/bag/artifice.png) no-repeat;}
+.cadeaux{background:url(../img/categories/bag/cadeaux.png) no-repeat;}
+
+/*********
+STICKERS
+*********/
+
+.stickers {
+  z-index:15;
+  display:none;
+  position: absolute;
+}
+
+.c_stickers:hover,
+.c_stickers.active {
+  cursor:pointer;
+  background:url(../img/categories/stickers_hover.png) no-repeat;
+}
+
+.stickers_droid_factory{background:url(../img/categories/stickers/stickers_droid_factory.png) no-repeat;}
+.stickers_leia{background:url(../img/categories/stickers/stickers_leia.png) no-repeat;}
+.stickers_starwars{background:url(../img/categories/stickers/stickers_starwars.png) no-repeat;}

@@ -1,0 +1,73 @@
+body {
+    background:#eee;
+    font-family:Helvetica,Arial;
+    font-size:14px;
+}
+
+/********
+BOUTONS SHARES
+*********/
+
+.partage {
+    width:150px;
+    height:50px;
+}
+
+.share_btn {margin:5px;}
+
+.share_btn, .share_btn-hover {
+    width:40px;
+    height:40px;
+    float:left;
+}
+
+/********
+FACEBOOK
+*********/
+
+.twitter_button {
+    background:url(twitter.png), no-repeat;
+    background-size:cover;
+}
+
+.twitter_hover-state {
+    opacity:0;
+    background:url(twitter_hover.png), no-repeat;
+    background-size:cover;    
+}
+
+.twitter_button:hover .twitter_hover-state {opacity:1;cursor:pointer;}
+
+/********
+TWITTER
+*********/
+
+.facebook_button {
+    background:url(facebook.png), no-repeat;
+    background-size:cover;
+}
+
+.facebook_hover-state {
+    opacity:0;
+    background:url(facebook_hover.png), no-repeat;
+    background-size:cover;
+}
+
+.facebook_button:hover .facebook_hover-state {opacity:1;cursor:pointer;}
+
+/********
+SAVE
+*********/
+
+.save_button {
+    background:url(save.png), no-repeat;
+    background-size:cover;
+}
+
+.save_hover-state {
+    opacity:0;
+    background:url(save_hover.png), no-repeat;
+    background-size:cover;
+}
+
+.save_button:hover .save_hover-state {opacity:1;cursor:pointer;}

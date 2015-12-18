@@ -7,7 +7,7 @@ bgOption = document.querySelectorAll('.bg-selector-option'),
 bgOptionSelected = document.querySelector('.color-selector-option').querySelector('[selected]'),
 randomBtn = document.querySelector('.randomall-btn'),
 viewbox = document.querySelector('.sbx-preview-viewbox'),
-inventoryItem = document.querySelectorAll('.sbx-inventory-item'),
+inventoryItem = document.querySelectorAll('.list > li'),
     formChosen = 'spherical', // default
     colorChosen = 'blue', // default
     bgChosen = "tatooine"; // default
@@ -16,7 +16,7 @@ inventoryItem = document.querySelectorAll('.sbx-inventory-item'),
 function init() {
   // Get all relevant vars : form, color, background, bonus
   // Draw droid from those vars
-  viewbox.innerHTML = '<img src="img/basis/'+formChosen+colorChosen+'.png">';
+  viewbox.innerHTML = '<img class="droidbasis" src="img/basis/'+formChosen+colorChosen+'.png">';
   viewbox.style.background = "url(img/bg/"+bgChosen+".png)";
   viewbox.style.backgroundSize = "cover";
   viewbox.style.backgroundPosition = "50%";
@@ -94,18 +94,16 @@ document.querySelector('.sbx-preview-name button').addEventListener('click', ran
 //      - else add the item
 
 
-
-// for (var i = 0; i < inventoryItem.length; i++) {
-//   inventoryItem[i].addEventListener('click', function() {
-//     var dataCat = this.getAttribute('data-cat'),
-//     dataItem = this.getAttribute('data-item');
-//     if (dataCat == 'accessories'){
-//       console.log(dataItem);
-//       if (!viewbox.querySelector('[data-item='+dataItem+']')) {
-//         viewbox.innerHTML += "<img class='sbx-part' src='/img/"+ this.getAttribute('data-cat') +"/"+ this.getAttribute('data-item') +".png'>";
-//       }
-//     } else {
-//       viewbox.removeChild(querySelector('.sbx-part[data-item='+dataItem+']'));
-//     }
-//   });
-// }
+// Add elements to the droid
+for (var i = 0; i < inventoryItem.length; i++) {
+  inventoryItem[i].addEventListener('click', function() {
+    var dataCat = this.getAttribute('data-cat');
+    var dataItem = this.getAttribute('data-item');
+    if ($.contains('viewbox', '[data-item='+dataItem+']')) {
+      $.delete($('.sbx-part[data-item='+dataItem+']'));
+    } else {
+      $('.sbx-part[data-item='+dataItem+']').remove();
+      viewbox.innerHTML += "<img data-cat="+dataCat+" data-item="+dataItem+" class='sbx-part' src='img/categories/"+ this.getAttribute('data-cat') +"/"+ this.getAttribute('data-item') +"f.png'>";
+    }
+  });
+}

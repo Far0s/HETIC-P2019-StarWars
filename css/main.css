@@ -17,7 +17,11 @@ h1 {
 
 
 .sandbox {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
   max-width: 100%;
   margin: auto;
@@ -25,8 +29,14 @@ h1 {
 }
 
 .sbx {
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
   flex: 1 0 auto;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
 }
 
@@ -36,23 +46,42 @@ h1 {
 }
 
 .sbx-leftbar, .sbx-rightbar {
-  max-width: 25%; 
+  max-width: 26%; 
 }
 
+
 .sbx-nav {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
   flex: 0 1 auto;
+  -webkit-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
   flex-flow: column wrap;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
   margin-left: 0;
   padding-left: 0;
   list-style: none; 
 }
 .sbx-nav-label {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
   flex: 0 0 auto;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
   width: 80px;
   height: 80px;
@@ -66,7 +95,11 @@ h1 {
 }
 
 .sbx-inventory {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
   flex: 1 1 auto;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
   margin-left: 0;
   padding: 5px;
@@ -76,7 +109,11 @@ h1 {
 }
 .sbx-inventory .sbx-inventory-label {
   display: none;
+  -webkit-flex: 1 1 100%;
+  -ms-flex: 1 1 100%;
   flex: 1 1 100%;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
   min-width: 100%;
   height: 80px;
@@ -85,9 +122,13 @@ h1 {
   padding-left: 20px; 
 }
 .sbx-nav-item[value="hair"]:checked .sbx-inventory-label[cat="hair"] {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex; 
 }
 .sbx-nav-item[value="hat"]:checked .sbx-inventory-label[cat="hat"] {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex; 
 }
 
@@ -101,6 +142,8 @@ h1 {
 }
 
 .sbx-preview {
+  -webkit-flex: 2 1 auto;
+  -ms-flex: 2 1 auto;
   flex: 2 1 auto; 
   display: block;
   position: relative;
@@ -132,17 +175,28 @@ h1 {
   position: relative;
   top: calc(50% - 250px);
   left: 5%;
-  width: 90%;
+  width: 420px;
   height: 500px;
+  margin: auto;
   background-image: url('../img/bg/tatooine.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
 }
 
-.sbx-preview-viewbox img {
-  position: relative;
+.sbx-preview-viewbox .droidbasis {
+  z-index: 5;
+}
+
+.sbx-preview-viewbox .sbx-part:not([data-cat=bag]) {
+  position: absolute;
   left: calc(50% - 210px);
+  z-index: 10;
+}
+.sbx-preview-viewbox .sbx-part[data-cat=bag] {
+  position: absolute;
+  left: calc(50% - 210px);
+  z-index: 1;
 }
 
 .sbx-leftbar {
@@ -154,7 +208,79 @@ h1 {
 .bg-selector-option[type=radio],
 .sbx-nav-item[type=radio],
 .sbx-inventory-item[type=radio] {
-   position: absolute;
-   top: -9999px;
-   left: -9999px;
+ position: absolute;
+ top: -9999px;
+ left: -9999px;
 }
+
+
+
+/********
+BOUTONS SHARES
+*********/
+
+.partage {
+  width:150px;
+  height:50px;
+  margin: auto;
+}
+
+.share_btn {margin:5px;}
+
+.share_btn, .share_btn-hover {
+  width:40px;
+  height:40px;
+  float:left;
+}
+
+/********
+FACEBOOK
+*********/
+
+.twitter_button {
+  background:url(../img/twitter.png), no-repeat;
+  background-size:cover;
+}
+
+.twitter_hover-state {
+  opacity:0;
+  background:url(../img/twitter_hover.png), no-repeat;
+  background-size:cover;    
+}
+
+.twitter_button:hover .twitter_hover-state {opacity:1;cursor:pointer;}
+
+/********
+TWITTER
+*********/
+
+.facebook_button {
+  background:url(../img/facebook.png), no-repeat;
+  background-size:cover;
+}
+
+.facebook_hover-state {
+  opacity:0;
+  background:url(../img/facebook_hover.png), no-repeat;
+  background-size:cover;
+}
+
+.facebook_button:hover .facebook_hover-state {opacity:1;cursor:pointer;}
+
+/********
+SAVE
+*********/
+
+.save_button {
+  background:url(../img/save.png), no-repeat;
+  background-size:cover;
+}
+
+.save_hover-state {
+  opacity:0;
+  background:url(../img/save_hover.png), no-repeat;
+  background-size:cover;
+}
+
+.save_button:hover .save_hover-state {opacity:1;cursor:pointer;}
+

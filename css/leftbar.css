@@ -30,7 +30,7 @@ TITLE & SUBTITLE
 h2 {
   color:#4A4A4A;
   font-family:'Helvetica-Neue';
-  font-size:24px;
+  font-size:20px;
   margin:0;
 }
 
@@ -57,14 +57,16 @@ ROUND DROID
   height: 100px;
   background-repeat: no-repeat;
   background-size: cover;
-  clip-path: polygon(0 0, 100% 0, 74% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 74% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 74% 100%, 0 100%);
 }
 
 .round_droid {
   background: url(../img/assets/round.png);
   background-repeat: no-repeat;
   background-size: cover;
-  clip-path: polygon(0 0, 100% 0, 74% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 74% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 74% 100%, 0 100%);
 }
 
 .round_droid-flag {
@@ -73,9 +75,11 @@ ROUND DROID
   background: url(../img/assets/go_round.png);
   background-repeat: no-repeat;
   background-size: cover;
-  clip-path: polygon(0 0, 100% 0, 74% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 74% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 74% 100%, 0 100%);
   transition: 0.2s ease-out;
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
   overflow: hidden;
   cursor: pointer;
 }
@@ -107,12 +111,14 @@ ROUND DROID
 .form-selector-option[type=radio]:checked + .form-selector-label .round_droid-flag,
 .form-selector-option[type=radio]:checked + .form-selector-label .square_droid-flag {
   opacity: 1;
-  transform: scale(1);
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .round_droid:hover .round_droid-flag{
   opacity:1;
-  transform:scale(1);
+  -webkit-transform:scale(1);
+          transform:scale(1);
 }
 
 /******* 
@@ -129,7 +135,8 @@ SQUARE DROID
   background: url(../img/assets/square.png);
   background-repeat: no-repeat;
   background-size: cover;
-  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+  -webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
 .square_droid-flag {
@@ -141,9 +148,11 @@ SQUARE DROID
   background: url(../img/assets/go_square.png);
   background-repeat: no-repeat;
   background-size: cover;
-  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+  -webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
   transition: 0.2s ease-out;
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
   cursor: pointer;
 }
 
@@ -156,15 +165,18 @@ SQUARE DROID
   background: url(../img/assets/good_choice_2.png);
   background-repeat: no-repeat;
   background-size: cover;
-  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+  -webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
   transition: 0.2s ease-out;
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
   cursor: pointer;
 }
 
 .square_droid:hover .square_droid-flag {
   opacity:1;
-  transform:scale(1);
+  -webkit-transform:scale(1);
+          transform:scale(1);
 } 
 
 /******* 
@@ -182,36 +194,37 @@ COLOR CHOICE
 #line_3 {width:104px;}
 
 .color_container {
-	border-radius: 100%;
-	width: 30px;
-	height: 30px;
-	overflow:hidden;
-	border: 1px solid;
-	transform: rotate(45deg);
-	display: inline-block;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  overflow:hidden;
+  border: 1px solid;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  display: inline-block;
 }
 
 .white_bottom {
-	height: 100%;
-	width: 50%;
-	display: block;
-	background: #ffffff;
-	margin-left: 50%;
+  height: 100%;
+  width: 50%;
+  display: block;
+  background: #ffffff;
+  margin-left: 50%;
 }
 
 .white_top {
-	height: 100%;
-	width: 50%;
-	display: block;
-	background: #ffffff;
+  height: 100%;
+  width: 50%;
+  display: block;
+  background: #ffffff;
 }
 
 .dark_yellow {
-	height: 100%;
-	width: 50%;
-	display: block;
-	background: #dca700;
-	margin-left: 50%;
+  height: 100%;
+  width: 50%;
+  display: block;
+  background: #dca700;
+  margin-left: 50%;
 }
 
 .blue   {transition:opacity 2s ease-in;cursor:pointer;background:#193e79;}
@@ -228,7 +241,8 @@ COLOR CHOICE
 .green:hover .hover_color,
 .black:hover .hover_color {
   opacity: 0.3;
-  transform: scale(1);
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .hover_color {
@@ -249,7 +263,8 @@ COLOR CHOICE
   margin-top: 7px;
   margin-left: 7px;
   opacity: 0.3;
-  transform: scale(2);
+  -webkit-transform: scale(2);
+          transform: scale(2);
 }
 
 /******* 
