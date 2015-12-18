@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="tool_bar">
+       <div class="droid_type">
+           <h2>Choose your droid !</h2>
+           <div class="droid-container">
+               <div class="round_droid droid" onclick="JouerSon();">
+                   <div class="round_droid-flag flag"></div>
+               </div>
+               <div class="square_droid droid" onclick="JouerSon();">
+                   <div class="square_droid-flag flag"></div>
+               </div>
+           </div>
+        </div>
+        <div class="droid_color">
+            <h2>Skin color</h2>
+            <div class="ligne"></div>
+            <div class="line_container">
+		    <div id="line_1">
+		    	<div class="color_container blue"><div class="hover_color"></div><div class="white_top"></div></div>
+		    	<div class="color_container orange"><div class="hover_color"></div><div class="white_top"></div></div>
+		    	<div class="color_container green"><div class="hover_color"></div><div class="white_top"></div></div>
+		    </div>
+		    <div id="line_2">
+		    	<div class="color_container yellow active_color"><div class="hover_color"></div><div class="white_top"></div></div>
+		    	<div class="color_container red"><div class="hover_color"></div><div class="white_top"></div></div>
+		    	<div class="color_container blue"><div class="hover_color"></div><div class="white_bottom"></div></div>
+		    	<div class="color_container orange"><div class="hover_color"></div><div class="white_bottom"></div></div>
+            </div>
+		    <div id="line_3">
+		    	<div class="color_container green"><div class="hover_color"></div><div class="white_bottom"></div></div>
+		    	<div class="color_container black"><div class="hover_color"></div><div class="dark_yellow"></div></div>
+		    	<div class="color_container black"><div class="hover_color"></div><div class="white_bottom"></div></div>
+		    </div>
+		    </div>
+	    </div>
+        <div class="droid_background">
+            <h2>Your droid's background</h2>
+            <div class="ligne"></div>
+            <div class="bg_container">
+                <div class="backgrounds tatooine"><div class="tatooine_hover"></div></div>
+                <div class="backgrounds planet"><div class="planet_hover"></div></div>
+                <div class="backgrounds stars"><div class="stars_hover"></div></div>
+                <div class="backgrounds winter"><div class="winter_hover"></div></div>
+            </div>
+        </div>
+    </div>
+    <audio id="MonSon" src="r2d2_scream.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
+                 

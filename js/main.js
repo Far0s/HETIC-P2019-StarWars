@@ -24,7 +24,14 @@ function init() {
 // Droid Form Selector
 function formSelector() {
   formChosen = this.getAttribute('value');
+  var sound = document.getElementById("r2scream");
   init();
+  if (sound) {
+    sound.play();
+    window.setTimeout(function(){
+      sound.parentNode.removeChild(sound);
+    }, 5000);
+  };
 }
 for (var i = 0; i < formOption.length; i++) {
   formOption[i].addEventListener('click', formSelector);
